@@ -28,5 +28,5 @@ Develop разработка: Feature
 <b>Зачем пушить сервер ?:</b>
 <br/>:для работы в команде<br/>
 
-:чтобы иметь резервную копию
+:чтобы иметь резервную копию<br/>
 https://replit.com/@vipevgeniykulik/module1#main.py
