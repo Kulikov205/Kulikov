@@ -1,2 +1,3 @@
 
-https://live.skillbox.ru/playlists/code/yazyki-programmirovaniya/
+
+https://stepik.org/users/462222594
