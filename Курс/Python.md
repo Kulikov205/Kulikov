@@ -40,3 +40,31 @@
 <br/>Код№8 - num = int(input()) a = num % 10 b = (num % 100) // 10 c = num // 100 print(c, b, a, sep = '') print(c, a, b, sep='') print(b, c, a, sep='') print(b, a, c, sep='') print(a, c, b, sep='') print(a, b, c, sep='') <br/>
 <br/>Код№9 - a = int(input()) a1 = a // 1000 a2 = (a // 100) % 10 a3 = (a // 10) % 10 a4 = a % 10 print("Цифра в позиции тысяч равна", a1) print("Цифра в позиции сотен равна", a2) print("Цифра в позиции десятков равна", a3) print("Цифра в позиции единиц равна", a4)<br/>
 # 4.1 Выбор из двух</b>
+<br/>Код№1 - a = input() b = input() if a == b: print('Пароль принят') else: print('Пароль не принят')<br/>
+<br/>Код№2 - a = int(input()) if a % 2 == 0:print('Четное') else:print('Нечетное')<br/>
+<br/>Код№3 - a = int(input()) b = a // 1000 c = a // 100 - (a // 1000 * 10) d = (a % 100 - a % 10) / 10 e = a % 10 if b + e == c - d: print('ДА') else: print('НЕТ')<br/>
+<br/>Код№4 - age = int(input()) if age >= 18: print('Доступ разрешен') else: print('Доступ запрещен')<br/>
+<br/>Код№5 - a = int(input()) b = int(input()) c = int(input()) if b - a == c - b: print('ДА') else: print('НЕТ ')<br/>
+<br/>Код№6 - a = int(input()) b = int(input()) if a > b: print(b) else: print(a)<br/>
+<br/>Код№7 - a = int(input()) b = int(input()) c = int(input()) d = int(input()) e = min(a, b, c, d) print( д)<br/>
+<br/>Код№8 - a = int(input()) if a <= 13: print('детство') elif a >= 14 и a <= 24: print('молодость') elif a >= 25 и a <= 59: print('зрелость') elif a >= 60: print('старость')<br/>
+<br/>Код№9 - a = int(input()) b = int(input()) c = int(input()) d = int() d = 0, если a > 0: d = d + a, если b > 0 : d = d + b, если c > 0 d = d + c print(d)<br/>
+# 4.2 Логические операции</b>
+<br/>Код№1 -a = int(input()) if a > -1 and a < 17: print('Принадлежит') else: print('Не принадлежит')<br/>
+<br/>Код№2 -n = int(input()) if not (-3 < n < 7): print('Принадлежит') else: print('Не принадлежит')<br/>
+<br/>Код№3 - a = int(input()) if (a > -30 and a <= -2) or (a > 7 and a <= 25): print('Принадлежит') else: print('Не принадлежит')<br/>
+<br/>Код№4 - a = int(input()) if (a % 7 == 0 or a % 17 == 0) and (a >= 1000 and a <= 9999): print('YES') else: print('NO')<br/>
+<br/>Код№5 - a = int(input()) b = int(input()) c = int(input()) if (a < (b + c)) and (b < (a + c)) and (c < (a + b)): print("YES") else: print("NO")<br/>
+<br/>Код№6 - import calendar print("YES" if calendar.isleap(int(input())) else "NO")<br/>
+<br/>Код№7 - a, b, c, d = int(input()), int(input()), int(input()), int(input()) if a == c or b == d: print('YES') else: print('NO')<br/>
+<br/>Код№8 - a, b, c, d = int(input()), int(input()), int(input()), int(input()) if (-1 <= a - c <= 1) and (-1 <= b - d <= 1): print('YES') else: print('NO')<br/>
+# 4.3 Вложенные и каскадные условия</b>
+<br/>Код№1 - a = int(input()) b = int(input()) если b > a: print("ДА") если a > b: print("НЕТ") если a == b: print( "Не знаю")<br/>
+<br/>Код№2 - a = int(input()) b = int(input()) c = int(input()) if a == b == c: print("Равносторонний") if (a == b или a == c или b == c) и (a != c или a != b или b != c): print("Равнобедренный"), если a != b и a != c и c != b: print("Разносторонний")<br/>
+<br/>Код№3 - a, b, c = int(input()), int(input()), int(input()) если a < b < c или a > b > c: print(b) elif b < c < a или b > c > a: print(c) else: print(a)<br/>
+<br/>Код№4 - m = int(input()) if m == 2: print('28') elif m <= 7: print(30 + m%2 ) else: print(31 - m%2 )<br/>
+<br/>Код№5 - n = int(input()) if n < 60: print('Легкий вес') elif n < 64: print('Первый полусредний вес') elif n < 69: print('Полусредний вес')
+<br/>Код№6 - a, b = int(input()), int(input()) s = input() if s == '+': print(a + b) elif s == '-': print( a - b) elif s == '*': print(a * b) elif s == '/': if b == 0: print('На ноль делиться нельзя!') else: print(a / b) else: print('Неверная операция')<br/>
+<br/>Код№7 - color1, color2 = input(), input() if color1 == 'красный' и color2 == 'синий' или (color1 == 'синий' и color2 == 'красный'): print('фиолетовый ') elif color1 == 'желтый' and color2 == 'синий' или (color1 == 'синий' and color2 == 'желтый'): print('зеленый') elif color1 == 'красный' and color2 == 'желтый' или (color1 == 'желтый' и color2 == 'красный'): print('оранжевый') elif color1 == 'красный' и color2 == 'красный' или color1 == 'желтый' и color2 = = 'желтый' или color1 == 'синий' и color2 == 'синий': print(color1) else: print('ошибка цвета')<br/>
+<br/>Код№8 - n = int(input()) если n < 0 или n > 36: print('ошибка ввода') elif n == 0: print('зеленый') elif 1 <= n <= 10: if n % 2 == 0: print('черный' ) else: print('красный') elif 11 <= n <= 18: if n % 2 == 0: print('красный') else: print('черный') elif 19 <= n <= 28: if n % 2 == 0: print('черный') else: print('красный') elif 29 <= n <= 36: if n % 2 == 0: print('красный') else: print('черный ')<br/>
+<br/>Код№9 - a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input()) if a2 < a1: if b2 < a1: print('пустое множество' elif b2 == a1: print(b2) elif a1 < b2 <= b1: print(a1, b2) elif b2 > b1: print(a1, b1 ) elif a2 == a1: if b2 <= b1: print(a2, b2) else: print(a2, b1) elif a2 < b1: if b2 <= b1: print(a2, b2) else: print(a2, b2) b1) elif a2 == b1: print(a2) else: print('пустое множество')<br/>
