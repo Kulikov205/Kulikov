@@ -40,6 +40,7 @@
 <br/>Код№8 - num = int(input()) a = num % 10 b = (num % 100) // 10 c = num // 100 print(c, b, a, sep = '') print(c, a, b, sep='') print(b, c, a, sep='') print(b, a, c, sep='') print(a, c, b, sep='') print(a, b, c, sep='') <br/>
 <br/>Код№9 - a = int(input()) a1 = a // 1000 a2 = (a // 100) % 10 a3 = (a // 10) % 10 a4 = a % 10 print("Цифра в позиции тысяч равна", a1) print("Цифра в позиции сотен равна", a2) print("Цифра в позиции десятков равна", a3) print("Цифра в позиции единиц равна", a4)<br/>
 # 4.1 Выбор из двух</b>
+<br/>![image](https://user-images.githubusercontent.com/97594290/168315605-07bf526f-a24b-4633-8c90-fb36dd61d21b.png)<br/>
 <br/>Код№1 - a = input() b = input() if a == b: print('Пароль принят') else: print('Пароль не принят')<br/>
 <br/>Код№2 - a = int(input()) if a % 2 == 0:print('Четное') else:print('Нечетное')<br/>
 <br/>Код№3 - a = int(input()) b = a // 1000 c = a // 100 - (a // 1000 * 10) d = (a % 100 - a % 10) / 10 e = a % 10 if b + e == c - d: print('ДА') else: print('НЕТ')<br/>
@@ -50,6 +51,7 @@
 <br/>Код№8 - a = int(input()) if a <= 13: print('детство') elif a >= 14 и a <= 24: print('молодость') elif a >= 25 и a <= 59: print('зрелость') elif a >= 60: print('старость')<br/>
 <br/>Код№9 - a = int(input()) b = int(input()) c = int(input()) d = int() d = 0, если a > 0: d = d + a, если b > 0 : d = d + b, если c > 0 d = d + c print(d)<br/>
 # 4.2 Логические операции</b>
+<br/>![image](https://user-images.githubusercontent.com/97594290/168315772-4881dd28-6bef-4c47-a318-ec2267db627a.png)<br/>
 <br/>Код№1 -a = int(input()) if a > -1 and a < 17: print('Принадлежит') else: print('Не принадлежит')<br/>
 <br/>Код№2 -n = int(input()) if not (-3 < n < 7): print('Принадлежит') else: print('Не принадлежит')<br/>
 <br/>Код№3 - a = int(input()) if (a > -30 and a <= -2) or (a > 7 and a <= 25): print('Принадлежит') else: print('Не принадлежит')<br/>
@@ -59,6 +61,7 @@
 <br/>Код№7 - a, b, c, d = int(input()), int(input()), int(input()), int(input()) if a == c or b == d: print('YES') else: print('NO')<br/>
 <br/>Код№8 - a, b, c, d = int(input()), int(input()), int(input()), int(input()) if (-1 <= a - c <= 1) and (-1 <= b - d <= 1): print('YES') else: print('NO')<br/>
 # 4.3 Вложенные и каскадные условия</b>
+<br/>![image](https://user-images.githubusercontent.com/97594290/168315831-50e25ed6-7a58-4ec7-bde7-c85b3b141636.png)<br/>
 <br/>Код№1 - a = int(input()) b = int(input()) если b > a: print("ДА") если a > b: print("НЕТ") если a == b: print( "Не знаю")<br/>
 <br/>Код№2 - a = int(input()) b = int(input()) c = int(input()) if a == b == c: print("Равносторонний") if (a == b или a == c или b == c) и (a != c или a != b или b != c): print("Равнобедренный"), если a != b и a != c и c != b: print("Разносторонний")<br/>
 <br/>Код№3 - a, b, c = int(input()), int(input()), int(input()) если a < b < c или a > b > c: print(b) elif b < c < a или b > c > a: print(c) else: print(a)<br/>
@@ -68,3 +71,43 @@
 <br/>Код№7 - color1, color2 = input(), input() if color1 == 'красный' и color2 == 'синий' или (color1 == 'синий' и color2 == 'красный'): print('фиолетовый ') elif color1 == 'желтый' and color2 == 'синий' или (color1 == 'синий' and color2 == 'желтый'): print('зеленый') elif color1 == 'красный' and color2 == 'желтый' или (color1 == 'желтый' и color2 == 'красный'): print('оранжевый') elif color1 == 'красный' и color2 == 'красный' или color1 == 'желтый' и color2 = = 'желтый' или color1 == 'синий' и color2 == 'синий': print(color1) else: print('ошибка цвета')<br/>
 <br/>Код№8 - n = int(input()) если n < 0 или n > 36: print('ошибка ввода') elif n == 0: print('зеленый') elif 1 <= n <= 10: if n % 2 == 0: print('черный' ) else: print('красный') elif 11 <= n <= 18: if n % 2 == 0: print('красный') else: print('черный') elif 19 <= n <= 28: if n % 2 == 0: print('черный') else: print('красный') elif 29 <= n <= 36: if n % 2 == 0: print('красный') else: print('черный ')<br/>
 <br/>Код№9 - a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input()) if a2 < a1: if b2 < a1: print('пустое множество' elif b2 == a1: print(b2) elif a1 < b2 <= b1: print(a1, b2) elif b2 > b1: print(a1, b1 ) elif a2 == a1: if b2 <= b1: print(a2, b2) else: print(a2, b1) elif a2 < b1: if b2 <= b1: print(a2, b2) else: print(a2, b2) b1) elif a2 == b1: print(a2) else: print('пустое множество')<br/>
+# 6.1 Числовые типы данных: int, float
+<br/>![image](https://user-images.githubusercontent.com/97594290/168317430-77643657-a7ce-4e7b-bc29-fc8e02f662b8.png)<br/>
+<br/>Код №1 print(0.5 * float(input()) * float(input()))<br/>
+<br/>Код №2 a = float(input()) b = float(input()) c = float(input()) print(a/(c+b))<br/>
+<br/>Код №3 n = float(input()) if n == 0: print('Обратного числа не существует') else: print(1 / n)<br/>
+<br/>Код №4 F = float(input()) print(5 / 9 * (F - 32))<br/>
+<br/>Код №5 t = int(input()) print(min(2, t) * 10.5 + max(t - 2, 0) * 4)<br/>
+<br/>Код №6 6x = float(input()) print(int(x*10)%10)<br/>
+<br/>Код №7 a = float(input()) print(a - int(a))<br/>
+<br/>Код №8 a, b, c, d, e = int(input()), int(input()), int(input()), int(input()), int(input()) print('Наименьшее число =', min(a, b, c, d, e)) print('Наибольшее число =',  max(a, b, c, d, e))<br/>
+<br/>Код №9 a, b, c = int(input()), int(input()), int(input()) print(max(a, b, c)) print(a + b + c - min(a, b, c) - max(a, b, c)) print(min(a, b, c))<br/>
+<br/>Код №10 x = int(input()) a = x % 10b = x // 10 % 10c = x // 100if a + b + c == 2 * max(a, b, c): print("Число интересное") else: print("Число неинтересное")<br/>
+<br/>Код №11 print(sum((abs(float(input())) for i in range(5))))<br/>
+<br/>Код №12 p1, p2, q1, q2 = [int(input()) for _ in range(4)] print(abs(p1 - q1) + abs(p2 - q2))<br/>
+# 6.2  Модуль math!
+![image](https://user-images.githubusercontent.com/97594290/168318748-ec99c41f-1a53-4ac7-90c7-961ca9e5a427.png)<br/>
+<br/>Код №1 import math x1, x2, y1, y2 = float(input()), float(input()), float(input()), float(input()) print(math.hypot(x1 - y1, x2 - y2))<br/>
+<br/>Код №2 R = float(input()) from math import pi print(pi*R**2) print(2*pi*R)<br/>
+<br/>Код №3 import math a, b  = float(input()), float(input()) sab, pab = a + b, a * b print(sab / 2) print(math.sqrt(pab)) print(2 * pab / sab) print(math.sqrt((a**2 + b**2) / 2))<br/>
+<br/>Код №4 from math import * x = radians(float(input())) print(sin(x) + cos(x) + tan(x)**2)<br/> <br/>import math a = float(input()) print(math.ceil(a) + math.floor(a))<br/>
+<br/>Код №5 from math import * a = float(input()) b = float(input()) c = float(input()) d = b**2-4*a*c if d < 0: print('Нет корней') elif d == 0: print(-b / (2*a)) elif d > 0: x1 = (-b - d ** 0.5) / (2*a) x2 = (-b + d ** 0.5) / (2*a) print(min(x1, x2)) print(max(x1, x2))<br/>
+<br/>Код №6 from math import *n, a = float(input()), float(input()) ans = (n * pow(a, 2)) / (4 * tan(pi / n)) print(ans)<br/>
+# 6.3 Строковый тип данных
+![image](https://user-images.githubusercontent.com/97594290/168319184-27237deb-ff62-47a4-a588-1c2edb3730e7.png)<br/>
+<br/>Код №1 print('''"Python is a great language!", said Fred. "I don't ever remember having this much fun before."''')<br/>
+<br/>Код №2 a = input() b = input() print(f"Hello {a} {b}! You just delved into Python")<br/>
+<br/>Код №3 c = input() print(f"Футбольная команда {c} имеет длину", len(c), "символов")<br/>
+<br/>Код №4 a, b, c = str(input()), str(input()), str(input()) print(min(a, b, c, key=len )) print(max(a, b, c, key=len ))<br/>
+<br/>Код №5 a, b, c = len(input()), len(input()), len(input()) if a + b + c == (min(a, b, c) + max(a, b, c))/2*3: print("YES") else: print("NO")<br/>
+<br/>Код №6 print('YES' if 'синий' in input() else 'NO')<br/>
+<br/>Код №8 s = input() print("YES" if "суббота" in s or "воскресенье" in s else "NO")<br/>
+<br/>Код №9 email = input() print('YES' if all(_ in email for _ in ('@', '.')) else 'NO')<br/>
+# 7.1  Цикл for
+![image](https://user-images.githubusercontent.com/97594290/168322525-8ef63ac4-8221-4e99-aae5-49c290f65bf0.png)<br/>
+<br/>Код №1<br/>
+<br/>Код №2<br/>
+<br/>Код №3<br/>
+<br/>Код №4<br/>
+<br/>Код №5<br/>
+<br/>Код №6<br/> 
