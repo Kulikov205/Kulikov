@@ -48,7 +48,7 @@
 <br/>Код№9 - a = int(input()) a1 = a // 1000 a2 = (a // 100) % 10 a3 = (a // 10) % 10 a4 = a % 10 print("Цифра в позиции тысяч равна", a1) print("Цифра в позиции сотен равна", a2) print("Цифра в позиции десятков равна", a3) print("Цифра в позиции единиц равна", a4)<br/>
 ![image](https://user-images.githubusercontent.com/97594290/168879527-b63fe18d-5f49-438b-b974-cf338c531ba4.png)<br/>
 
-# 4  Условный оператор<br/>
+# 4  <b> Условный оператор<br/>
 # 4.1 Выбор из двух</b>
 <br/>![image](https://user-images.githubusercontent.com/97594290/168315605-07bf526f-a24b-4633-8c90-fb36dd61d21b.png)<br/>
 <br/>Код№1 - a = input() b = input() if a == b: print('Пароль принят') else: print('Пароль не принят')<br/>
